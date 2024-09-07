@@ -1,0 +1,466 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6196;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #ff6f61;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff6f61;
+}
+
+.services .service-item {
+    margin-bottom: 30px;
+}
+
+.services .service-item h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services .service-item p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .services .service-item h3 {
+        font-size: 24px;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* About Us Section */
+.about {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #ff6f61;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.about .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer Styles (reuse from home page) */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+/* Pricing Section */
+.pricing {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.pricing h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+.pricing p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-item h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-item p {
+    font-size: 24px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.pricing-item ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-item ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.pricing-item .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-item .btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Pricing Grid */
+@media (max-width: 768px) {
+    .pricing-grid {
+        flex-direction: column;
+    }
+
+    .pricing-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Privacy Policy Section */
+.privacy-policy {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: left;
+}
+
+.privacy-policy h1 {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.privacy-policy p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.privacy-policy h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Privacy Policy */
+@media (max-width: 768px) {
+    .privacy-policy h1 {
+        font-size: 32px;
+    }
+
+    .privacy-policy h2 {
+        font-size: 24px;
+    }
+
+    .privacy-policy p {
+        font-size: 16px;
+    }
+}
+/* Blogs Section */
+.blogs {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.blogs h1 {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.blogs p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.blog-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-item .date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.blog-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.blog-item .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-item .btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Blogs Grid */
+@media (max-width: 768px) {
+    .blog-grid {
+        flex-direction: column;
+    }
+
+    .blog-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
